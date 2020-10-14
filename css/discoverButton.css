@@ -1,0 +1,135 @@
+body {
+    background-color: #222;
+    padding: 100px 0 0 0;
+  }
+  
+  /* .scroll-btn .mouse{
+      display: flex;
+      flex-direction: column;
+      align-items:center ;
+  } */
+  
+  
+  
+  /* p {
+    margin-left: -55px;
+  } */
+  @-webkit-keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 55%;
+      }
+      15% {
+      opacity: 1;
+      top: 60%;
+      }
+      50% {
+      opacity: 1;
+      top: 65%;
+      }
+      100% {
+      opacity: 1;
+      top: 55%;
+      }
+      
+  }
+  
+  @-moz-keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 55%;
+      }
+      15% {
+      opacity: 1;
+      top: 60%;
+      }
+      50% {
+      opacity: 1;
+      top: 65%;
+      }
+      100% {
+      opacity: 1;
+      top: 55%;
+      }
+  }
+  @keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 55%;
+      }
+      15% {
+      opacity: 1;
+      top: 60%;
+      }
+      50% {
+      opacity: 1;
+      top: 65%;
+      }
+      100% {
+      opacity: 1;
+      top: 55%;
+      }
+  }
+   .scroll-btn {
+       display: flex;
+       flex-direction: column;
+      align-items:center ;
+      position: relative;
+      /* display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center; */
+  }
+  .discoverText{
+      /* display: inline-block; */
+      /* line-height: 18px; */
+      position: absolute;
+      top:65px;
+      z-index: 1;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: 'Crimson Text', serif;
+      color: #ffffff;
+      /* font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+      letter-spacing: 3px;
+  }
+  /* .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *.active {
+      color: #ffffff;
+  } */
+  /* .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *:active,
+  .scroll-btn > *.active {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+  } */
+  .scroll-btn .mouse {
+      position: relative;
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      /* border: 3px solid white; */
+      border-radius: 50%;
+      background:#D7E6E8 ;
+  }
+  .scroll-btn .mouse > * {
+      position: absolute;
+      display: block;
+      top: 100%;
+      left: 50%;
+      width: 2px;
+      height: 70px;
+      margin: 20px 0 0 0;
+      background: white;
+      /* border-radius: 50%; */
+      -webkit-animation: ani-mouse 2.5s linear infinite;
+      -moz-animation: ani-mouse 2.5s linear infinite;
+      animation: ani-mouse 2.5s linear infinite;
+  }

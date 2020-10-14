@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-local-bar" data-name="Icon material-local-bar" class="cls-1" d="M64.5,11.167V4.5H4.5v6.667l26.667,30V57.833H14.5V64.5h40V57.833H37.833V41.167ZM19.267,17.833l-5.9-6.667h42.3l-5.933,6.667Z" transform="translate(-4.5 -4.5)"/>
+</svg>

@@ -22,8 +22,7 @@ if(isset($_SESSION['members'])){
 <?php include __DIR__. '/__body.php'?>
 <?php include __DIR__. '/__nav.php'?>
 <?php include __DIR__. '/_index_page.php'?>
-
-<!-- 網頁動態視差滾動PARALLAX SCRIPT FUNCTION 0817-->
+<!-- 網頁動態視差滾動PARALLAX SCRIPT FUNCTION 芷彤 0817-->
 <script>
     var parallaxPic1 = document.getElementsByClassName('parallaxPic1');
 new simpleParallax(parallaxPic1, {
@@ -37,7 +36,7 @@ new simpleParallax(parallaxPic2, {
 });
 
 </script>
-<!-- 網頁動態視差滾動PARALLAX SCRIPT FUNCTION 0817-->
+<!-- 網頁動態視差滾動PARALLAX SCRIPT FUNCTION 芷彤 0817-->
 
 <?php include __DIR__. '/__footer.php'?>
 <?php //include __DIR__. '/__script.php'?>

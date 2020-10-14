@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/font.css">
+  <!-- <link rel="stylesheet" href="/normalize/normalize.css"> -->
+
+  <style>
+    .x11 {
+      width: 100vw;
+      padding: 0;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 1;
+
+    }
+
+    .webarcadia{
+      margin: 15px;
+      height: 50px;
+    }
+
+    /* ---------------------------ham */
+
+
+
+
+    .book {
+      background: #EB9851;
+      width: 133px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 50px 0 0;
+      font-weight: bold;
+    }
+
+    .book a {
+      color: white;
+      font-family: 'Crimson Text', serif;
+      font-size: 15px;
+    }
+
+    .toppage {
+      width: 100vw;
+      height: 100vh;
+
+
+    }
+
+    .toppage img {
+      width: 100%;
+
+    }
+
+
+
+    .x2 {
+      display: flex;
+      top: 80px;
+      background: #E4E4E4;
+      padding: 10px 0 10px 0;
+      width: 100vw;
+      justify-content: center;
+      opacity: 93%;
+
+    }
+
+    .x2 a {
+      font-size: 14px;
+
+    }
+
+    .bookingbar {
+      width: 100vw;
+      height: 260px;
+      display: flex;
+      background-color: #5D5D5D;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .checkindate {
+      display: flex;
+      flex-direction: column;
+      color: #FFFFFF;
+      margin: 82px 50px 0 0;
+      font-weight: bold;
+    }
+
+    .checkoutdate {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      color: #FFFFFF;
+      margin: 82px 50px 0 0;
+    }
+
+    .reservation {
+      color: #FFFFFF;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      margin: 82px 50px 0 0;
+    }
+
+    .booking {
+      margin: 100px 50px 0 0;
+      background: #EB9851;
+      width: 133px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-family: 'Crimson Text', serif;
+      font-size: 15px;
+    }
+    .booking a{
+      color: white;
+    }
+
+    .foot {
+      background: #09839C;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .socialmedia {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .socialmedia a {
+      margin: 10px;
+    }
+
+    .copyright {
+      transform: translateY(110px);
+      ;
+      position: absolute;
+      left: 42%;
+    }
+
+    #menuToggle {
+      display: block;
+      position: relative;
+      top: 50px;
+      left: 50px;
+
+      z-index: 1;
+
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #menuToggle a {
+      text-decoration: none;
+      color: #2323 23;
+      transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+      color: tomato;
+    }
+
+
+    #menuToggle input {
+      display: block;
+      width: 51px;
+      height: 36px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+
+      cursor: pointer;
+
+      opacity: 0;
+      /* hide this */
+      z-index: 2;
+      /* and place it over the hamburger */
+
+      -webkit-touch-callout: none;
+    }
+
+    /*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+      display: block;
+      width: 49px;
+      height: 5px;
+      margin-bottom: 9px;
+      position: relative;
+
+      background: #09839C;
+      border-radius: 3px;
+
+      z-index: 1;
+
+      transform-origin: 4px 0px;
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked~span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+
+    /*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked~span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked~span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+      position: absolute;
+      width: 600px;
+      height: 1080px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+
+
+      background: #09839C;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      opacity: 90%;
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0%);
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+      text-align: center;
+      color: #ffff;
+      padding: 10px 0;
+      font-size: 20px;
+
+      margin-bottom: 32px;
+      transition: 1s;
+    }
+
+    #menu li:hover {
+      color: #EB9851;
+      text-decoration: underline
+    }
+
+    /*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked~ul {
+      transform: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    .mobilearcadia{
+      display: none;
+    }
+
+    .arcadiaiconmob{
+      display: none;
+    }
+    .fontregu{
+      font-weight: unset;
+      line-height: 26px;
+    }
+    .rwdonly{
+      display:none
+    }
+    @media screen and (max-width: 375px) {
+      .webarcadia{
+        display: none;
+      }
+      .mobilearcadia{
+        display: unset;
+      }
+      .x11 {
+        width: 100vw;
+        height: 60px;
+        justify-content: space-around;
+      }
+
+      
+      /* ---------------------------ham */
+
+
+
+
+      .book {
+
+        width: 88px;
+        height: 60px;
+        margin: 0 -33px 0 0;
+        z-index: -1;
+      }
+
+      .book a { 
+        color: #FFFFFF;
+        font-size: 15px;
+      }
+
+      .x2 {
+        display: none;
+      }
+      .bookingbar {
+      width: 100vw;
+      height: 440px;
+      flex-direction: column;
+      background-color: #5D5D5D;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .checkindate {
+     
+      flex-direction: column;
+     
+      margin: 0px 0px 34px 0;
+      font-weight: bold;
+      width: 245px;
+      height: 38px;
+    }
+
+    .checkoutdate {
+      flex-direction: column;
+      color: #FFFFFF;
+      margin: 0px 0px 34px 0;
+      width: 245px;
+      height: 38px;
+    }
+
+    .reservation {
+     
+      flex-direction: column;
+      margin: 0px 0px 50px 0;
+      width: 245px;
+      height: 38px;
+    }
+    .booking {
+      z-index: 0;
+      width: 245px;
+      height: 38px;
+      margin: 0;
+    }
+
+
+
+      .foot {
+        height: 467px;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .arcadiaiconweb{
+        display: none;
+      }
+      .arcadiaiconmob{
+        display: unset;
+        margin:  0 0 -60px 0;
+      }
+
+      .contact {
+        transform: translate(-79px, 78px)
+      }
+
+      .NAVIGATE {
+        transform: translate(86px, -87px)
+      }
+
+      .NAVIGATE a {
+        margin: unset;
+      }
+
+      .socialmedia {
+
+        display: unset;
+        bottom: -241px;
+        margin: -70px 0 30px 0;
+
+      }
+
+      .socialmedia a {
+        margin: 0 10px 0 0 ;
+
+      }
+
+      .copyright {
+        position: unset;
+        transform: translateY(0px);
+        ;
+      }
+
+      #menuToggle {
+
+        top: 53px;
+        left: 0px;
+
+
+      }
+
+      #menuToggle a {
+        text-decoration: none;
+        color: #2323 23;
+
+        transition: color 0.3s ease;
+      }
+
+      #menuToggle a:hover {
+        color: tomato;
+      }
+
+
+      #menuToggle input {
+        display: block;
+        width: 51px;
+        height: 36px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+      }
+
+      /*
+ * Just a quick hamburger
+ */
+      #menuToggle span {
+
+        width: 32px;
+        height: 2px;
+        margin-bottom: 7.5px;
+        border-radius: 1px;
+      }
+
+
+      #menu {
+
+        width: 410px;
+        height: 812x;
+
+
+      }
+      .rwdonly{
+      display:unset;
+      margin:  0 0 113px 0;
+    }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="x1">
+
+      <div class="x11 ">
+        <nav role="navigation" class="" style="transform: translateY(-50px);">
+          <div id="menuToggle">
+            <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+            <input type="checkbox" />
+
+            <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+            <ul id="menu">
+              <a href="#">
+                <li><img src="/title/Group 864.svg" alt="" class="rwdonly"></li>
+              </a>
+              <a href="#">
+                <li class="h5eng">Home</li>
+              </a>
+              <a href="#">
+                <li class="h5eng">About</li>
+              </a>
+              <a href="#">
+                <li class="h5eng">ROOM</li>
+              </a>
+              <a href="#">
+                <li class="h5eng">EXPERIENCE</li>
+              </a>
+              <a href="#">
+                <li class="h5eng">WEDDING</li>
+              </a>
+              <a href="#">
+                <li class="h5eng">FACILITY</li>
+              </a>
+              <a href="#">
+                <li class="h5eng">GALLERY</li>
+              </a>
+              <div class="d-flex" style="padding: 10px 0;font-size: 20px;margin:0 auto;width: 150px;">
+                <a href=""><img src="/title/Icon awesome-facebook-square.svg" alt="" style="margin: 0 30px 0 0 ;"></a>
+                <a href=""><img src="/title/Group 610.svg" alt="" style="margin: 0 30px 0 0 ;"></a>
+                <a href=""><img src="/title/Icon awesome-twitter-square.svg" alt="margin: 0 0 0 0 ;"></a>
+              </div>
+            </ul>
+          </div>
+        </nav>
+        <img class="webarcadia" src="/title/Group 609.png" alt="">
+        <img class="mobilearcadia" src="/title/Group 856.svg" alt="">
+        <div class="book d-flex ">
+          <a class="123 d-flex bodytexteng" href="">Book Now</a>
+        </div>
+
+      </div>
+      <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+
+    </div>
+  </div>
+  <div class="bookingbar">
+    <div class="checkindate">
+      <span class="bodytextchi">入住日期</span>
+
+      <input type="text">
+    </div>
+    <div class="checkoutdate">
+      <span class="bodytextchi">退房日期</span>
+      <input type="text">
+    </div>
+    <div class="reservation">
+      <span class="bodytextchi">預約人數</span>
+      <input type="text">
+    </div>
+    <div class=" d-flex booking">
+      <a class=" d-flex bodytexteng" href="">Booking</a>
+    </div>
+  </div>
+
+  <div class="x2 " data-0="transform: translateY(110vh);" data-800="transform: translateY(0vh) ;position:fixed">
+
+    <a style="color: #5D5D5D; margin-right: 50px;" href="" class="h5eng fontregu"> ABOUT</a>
+    <a style="color: #5D5D5D;margin-right: 50px;" href="" class="h5eng fontregu">ROOM</a>
+    <a style="color: #5D5D5D;margin-right: 50px;" href="" class="h5eng fontregu">EXPERIENCE</a>
+    <a style="color: #5D5D5D;margin-right: 50px;" href="" class="h5eng fontregu">WEDDING</a>
+    <a style="color: #5D5D5D;margin-right: 50px;" href="" class="h5eng fontregu">FACILITY</a>
+    <a style="color: #5D5D5D;margin-right: 50px;" href="" class="h5eng fontregu">GALLERY</a>
+
+  </div>
+  <div class="toppage">
+    <img src="/title/DJI_0165.jpg" alt=""></div>
+  <div style="width: 100vw; height: 100vh; background-color: salmon;"> </div>
+  <img class="" src="/title/lisa.jpg" alt="" style="width: 100VW;">
+  <!-- <img src="/title/readmckendree-2017-06-5-nihiwatu-183-v1-mfrzd-2000k.svg" alt=""> -->
+  </div>
+
+  <footer class="foot d-flex">
+    <!-- <img class="backtop" src="/title/Group 730.svg " alt=""> -->
+    <div class="">
+      <img class="arcadiaiconmob" src="/title/Group 859.svg" alt="">
+      <img class="arcadiaiconweb" src="/title/Group 641.png" alt="">
+    </div>
+    <div class="contact">
+      <img src="/title/Group 644.png" alt="">
+    </div>
+
+    <div class="NAVIGATE">
+
+      <ul style="text-decoration: none; color: #ffff"><span class="h4 ">NAVIGATE</span>
+        <a href="">
+          <li style="list-style: none; color: #ffff;" class="mintexteng">ABOUT</li>
+        </a>
+        <a href="">
+          <li style="list-style: none; color: #ffff;" class="mintexteng">ROOM</li>
+        </a>
+        <a href="">
+          <li style="list-style: none; color: #ffff;" class="mintexteng">EXPERIENCE</li>
+        </a>
+        <a href="">
+          <li style="list-style: none; color: #ffff;" class="mintexteng">WEDDING</li>
+        </a>
+        <a href="">
+          <li style="list-style: none; color: #ffff;" class="mintexteng">FACILITY</li>
+        </a>
+        <a href="">
+          <li style="list-style: none; color: #ffff;" class="mintexteng">GALLERY</li>
+        </a>
+      </ul>
+
+    </div>
+    <div class="socialmedia">
+      <a href=""><img class="fbicon" src="/title/Icon awesome-facebook-square.svg" alt=""></a>
+      <a href=""><img class="insicon" src="/title/Group 610.svg" alt=""></a>
+      <a href=""><img class="twittericon" src="/title/Icon awesome-twitter-square.svg" alt=""></a>
+    </div>
+    <img class="copyright" src="/title/© copyright by The Arcadia Resort 2020.png" alt="" style="">
+  </footer>
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="/skrollr-master/dist/skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+</body>
+
+</html>

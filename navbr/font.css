@@ -1,0 +1,185 @@
+
+
+    .crimson {
+        font-family: 'Crimson Text', serif;
+    }
+
+    .Noto {
+        font-family: 'Noto Serif TC', serif;
+    }
+
+    .h2eng {
+        letter-spacing: 0.4em;
+        line-height: 110px;
+        font-family: 'Crimson Text', serif;
+        font-size: 80px;
+    }
+
+    .h2chi {
+        letter-spacing: 0.4em;
+        line-height: 110px;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 80px;
+    }
+
+    .h3eng {
+        letter-spacing: 0.3em;
+        line-height: 69px;
+        font-family: 'Crimson Text', serif;
+        font-size: 60px;
+    }
+
+    .h3chi {
+        letter-spacing: 0.3em;
+        line-height: 69px;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 60px;
+    }
+
+    .h4eng {
+        letter-spacing: 0.15em;
+        line-height: 69px;
+        font-family: 'Crimson Text', serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .h4chi {
+        letter-spacing: 0.15em;
+        line-height: 69px;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .h5eng {
+        letter-spacing: 0.12em;
+        line-height: 50px;
+        font-family: 'Crimson Text', serif;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .h5chi {
+        letter-spacing: 0.12em;
+        line-height: 50px;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .bodytexteng {
+        letter-spacing: 0.03em;
+        line-height: 25px;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+    }
+
+    .bodytextchi {
+        letter-spacing: 0.03em;
+        line-height: 25px;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 16px;
+       
+
+    }
+
+    .mintexteng {
+        letter-spacing: 0.02em;
+        line-height: 20px;
+        font-family: 'Crimson Text', serif;
+        font-size: 12px;
+    }
+
+    .mintextchi {
+        letter-spacing: 0.02em;
+        line-height: 20px;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 375px) {
+        .h2eng {
+            letter-spacing: 0.24em;
+            line-height: 39px;
+            font-family: 'Crimson Text', serif;
+            font-size: 28px;
+        }
+
+        .h2chi {
+            letter-spacing: 0.24em;
+            line-height: 39px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 28px;
+        }
+
+        .h3eng {
+            letter-spacing: 0.2em;
+            line-height: 24px;
+            font-family: 'Crimson Text', serif;
+            font-size: 24px;
+        }
+
+        .h3chi {
+            letter-spacing: 0.2em;
+            line-height: 24px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+        }
+
+        .h4eng {
+            letter-spacing: 0.1em;
+            line-height: 18px;
+            font-family: 'Crimson Text', serif;
+            font-size: 20px;
+        }
+
+        .h4chi {
+            letter-spacing: 0.1em;
+            line-height: 18px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+        }
+
+        .h5eng {
+            letter-spacing: 0.1em;
+            line-height: 14px;
+            font-family: 'Crimson Text', serif;
+            font-size: 14px;
+        }
+
+        .h5chi {
+            letter-spacing: 0.1em;
+            line-height: 14px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 14px;
+        }
+
+        .bodytexteng {
+            letter-spacing: 0.03em;
+            line-height: 24px;
+            font-family: 'Crimson Text', serif;
+            font-size: 12px;
+        }
+
+        .bodytextchi {
+            letter-spacing: 0.03em;
+            line-height: 24px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 12px;
+        }
+
+        .mintexteng {
+            letter-spacing: 0.02em;
+            line-height: 6px;
+            font-family: 'Crimson Text', serif;
+            font-size: 10px;
+        }
+
+        .mintextchi {
+            letter-spacing: 0.02em;
+            line-height: 6px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 10px;
+        }
+    }

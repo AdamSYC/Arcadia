@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.816" height="35.816" viewBox="0 0 35.816 35.816">
+  <g id="locker" transform="translate(0 0)">
+    <path id="Path_78" data-name="Path 78" d="M56.646,482.239h-5.6A1.049,1.049,0,0,1,50,481.189V480h7.695v1.189A1.049,1.049,0,0,1,56.646,482.239Z" transform="translate(-46.502 -446.423)" fill="#5d5d5d"/>
+    <path id="Path_79" data-name="Path 79" d="M358.646,482.239h-5.6A1.049,1.049,0,0,1,352,481.189V480h7.695v1.189A1.049,1.049,0,0,1,358.646,482.239Z" transform="translate(-327.377 -446.423)" fill="#5d5d5d"/>
+    <path id="Path_80" data-name="Path 80" d="M183.148,180a3.148,3.148,0,1,0,3.148,3.148A3.151,3.151,0,0,0,183.148,180Zm0,4.2a1.049,1.049,0,1,1,1.049-1.049A1.05,1.05,0,0,1,183.148,184.2Z" transform="translate(-167.409 -167.409)" fill="#5d5d5d"/>
+    <path id="Path_81" data-name="Path 81" d="M0,210H4.2v2.1H0Z" transform="translate(0 -195.31)" fill="#5d5d5d"/>
+    <path id="Path_82" data-name="Path 82" d="M0,270H4.2v3.5H0Z" transform="translate(0 -251.113)" fill="#5d5d5d"/>
+    <path id="Path_83" data-name="Path 83" d="M113.224,90H90v18.887h23.224ZM99.444,104.69a5.246,5.246,0,1,1,5.246-5.246A5.252,5.252,0,0,1,99.444,104.69Zm11.682-3.148a1.049,1.049,0,1,1-2.1,0v-4.2a1.049,1.049,0,1,1,2.1,0Z" transform="translate(-83.704 -83.704)" fill="#5d5d5d"/>
+    <path id="Path_84" data-name="Path 84" d="M34.767,0H1.049A1.049,1.049,0,0,0,0,1.049V7H4.2V5.246A1.049,1.049,0,0,1,5.246,4.2H30.569a1.049,1.049,0,0,1,1.049,1.049V26.232a1.049,1.049,0,0,1-1.049,1.049H5.246A1.049,1.049,0,0,1,4.2,26.232V24.484H0V30.43a1.049,1.049,0,0,0,1.049,1.049H34.767a1.049,1.049,0,0,0,1.049-1.049V1.049A1.049,1.049,0,0,0,34.767,0Z" transform="translate(0 0)" fill="#5d5d5d"/>
+    <path id="Path_85" data-name="Path 85" d="M0,130H4.2v3.5H0Z" transform="translate(0 -120.906)" fill="#5d5d5d"/>
+  </g>
+</svg>

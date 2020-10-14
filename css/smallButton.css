@@ -1,0 +1,110 @@
+.smallButton {
+    margin-top: 30px;
+    padding: 0px;
+    list-style-type: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.smallvar_nav {
+    position: relative;
+    background: transparent;
+    width: 200px;
+    height: 48px;
+    /* margin-bottom: 10px; */
+    border: 1px solid #EB9851;
+}
+
+.smalllink_bg {
+    width: 0px;
+    height: 48px;
+    position: absolute;
+    background: #EB9851;
+    color: #fff;
+    z-index: 2;
+}
+
+.smalllink_bg i {
+    position: relative;
+}
+
+.smalllink_title {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    color: #EB9851;
+}
+
+
+.smalllink_title:hover {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+}
+
+.smalllink_title {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    color: #fff;
+}
+
+.smallvar_nav:hover .link_bg {
+    width: 100%;
+    background: #EB9851;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.smallvar_nav:hover a {
+    /* font-weight:bold; */
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.smallButton a {
+    display: block;
+    position: absolute;
+    /* float:left; */
+    font-family: Crimson Text;
+    color: #EB9851;
+    text-decoration: none;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.smallButton a:hover {
+    display: block;
+    position: absolute;
+    /* float:left; */
+    font-family: Crimson Text;
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.smallButton span {
+    margin-top: 10px;
+    display: block;
+}
+
+<div class="smallButton">
+<li class="var_nav">
+    <div class="link_bg"></div>
+    <div class="link_title">
+        <a href="#"><span>Read More</span></a>
+    </div>
+</li>
+</div>

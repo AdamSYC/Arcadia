@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="86.021" viewBox="0 0 202 86.021">
+  <g id="Group_729" data-name="Group 729" transform="translate(-859 -4912.979)">
+    <text id="ARCADIA" transform="translate(960 4989)" fill="#09839c" font-size="40" font-family="SegoeUI, Segoe UI" letter-spacing="0.15em"><tspan x="-100.109" y="0">ARCADIA</tspan></text>
+    <g id="Group_136" data-name="Group 136" transform="translate(608.77 4835.312)">
+      <path id="Path_36" data-name="Path 36" d="M362.231,86.826s.806-8.134,10.44-8.108c0,0-.932,8.779-9.922,8.779s-10.361-8.779-10.361-8.779,8.168-.96,10.141,8.174" transform="translate(-11.186)" fill="none" stroke="#09839c" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_37" data-name="Path 37" d="M341.367,109.555s-8.134-.773-8.108-10.011c0,0,8.778.893,8.778,9.514s-8.778,9.935-8.778,9.935-.96-7.832,8.174-9.725" transform="translate(0 -12.177)" fill="none" stroke="#09839c" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_38" data-name="Path 38" d="M397.242,108.05s8.134-.773,8.108-10.011c0,0-8.779.893-8.779,9.514s8.779,9.935,8.779,9.935.96-7.832-8.174-9.725" transform="translate(-36.15 -11.298)" fill="none" stroke="#09839c" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_39" data-name="Path 39" d="M361.543,144.7s.806,8.134,10.44,8.108c0,0-.932-8.779-9.922-8.779s-10.361,8.779-10.361,8.779,8.168.96,10.141-8.174" transform="translate(-10.785 -38.152)" fill="none" stroke="#09839c" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_40" data-name="Path 40" d="M351.126,97.389a12.777,12.777,0,0,1,0,20.346" transform="translate(-10.243 -10.918)" fill="none" stroke="#09839c" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_41" data-name="Path 41" d="M392.046,96.962a12.777,12.777,0,0,0,0,20.346" transform="translate(-30.775 -10.669)" fill="none" stroke="#09839c" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_33" data-name="Line 33" x2="9.53" transform="translate(346.496 96.644)" fill="none" stroke="#09839c" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_42" data-name="Path 42" d="M370.168,102.955v4.7H374.7v-4.7" transform="translate(-21.149 -14.168)" fill="none" stroke="#09839c" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_43" data-name="Path 43" d="M370.31,133.741v-4.7h4.534v4.7" transform="translate(-21.23 -29.398)" fill="none" stroke="#09839c" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
